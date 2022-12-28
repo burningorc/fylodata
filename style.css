@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    width: 21rem;
+}
+.logos {
+    background-color: hsl(228, 56%, 26%);
+    padding: 2.5rem;
+    border-radius: 1rem 7.5rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.files {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.common {
+    border-radius: 0.5rem;
+    background-color: hsl(229, 57%, 11%);
+}
+.document {
+    padding: 0.6rem 0.8rem;
+}
+.folder {
+    padding: 0.69rem 0.7rem;
+}
+.upload {
+    padding: 0.83rem 0.75rem;
+}
+.data {
+    position: relative;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1rem;
+    padding: 2.2rem;
+    padding-bottom: 3.5rem;
+}
+.upper {
+    padding: 0.065rem;
+    height: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+}
+.middle {
+    position: relative;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 100%;
+    width: 12.5rem;
+    border-radius: 0.4rem;
+}
+.lower {
+    position: absolute;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: hsl(243, 100%, 93%);
+    border-radius: 50%;
+    right: 0.12rem;
+    top: 0.09rem;
+}
+.range {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.range p {
+    color: hsl(243, 100%, 93%);
+}
+.range p span {
+    font-size: 0.85rem;
+}
+.left {
+    position: absolute;
+    background-color: hsl(243, 100%, 93%);
+    width: 11rem;
+    height: 4rem;
+    border-radius: 0.7rem;
+    left: 5rem;
+    top: 8.5rem;
+}
+.left p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+    margin-left: 1.9rem;
+}
+.left span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(229, 7%, 55%);
+}
+.data .para {
+    color: hsl(229, 7%, 55%);
+    font-size: 0.9rem;
+    text-align: center;
+}
+.data .para span {
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+}
+@media (min-width: 700px){
+    main {
+        display: flex;
+        width: 60rem;
+        gap: 2rem;
+    }
+    .logos {
+        width: 22rem;
+    }
+    .data {
+        width: 33rem;
+        height: 10rem;
+        margin-top: 2.7rem;
+    }
+    .data .para {
+        text-align: left;
+    }
+    .middle {
+        width: 21rem;
+    }
+    .lower {
+        top: 0.07rem;
+    }
+    .left{
+        top: -2.9rem;
+        left: 20rem;
+        height: 6rem;
+        border-radius: 0.7rem 0.7rem 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 1.6rem;
+        left: 20rem;
+        width: 11rem;
+        height: 0;
+        border-bottom: 1.5rem solid hsl(228, 56%, 26%);
+        border-left: 0 solid transparent;
+        border-right: 1.4rem solid transparent;
+        border-top: 0 solid transparent;
+    }
+}
